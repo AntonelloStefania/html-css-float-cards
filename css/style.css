@@ -21,13 +21,33 @@ h1{
     margin-bottom: 40px;
 }
 
-.row::after{
+.col::after{
     content: '';
     display: table;
     clear: both;
 
 }
 .col{
-    background-color: blue;
+    background-color: rgb(1, 1, 22);
     width: calc(100% / 3 - 20px);
+    margin: 20px 10px;
+    float: left;
+
+}
+.card-text{
+    color: white;
+    padding-top: 10px;
+    line-height: 1.5;
+    display: block;
+}
+
+.content>img{
+    width: 25%;
+    float: left;
+    margin-right: 20px;
+}
+
+.email{
+    color: rgb(84, 173, 224);
+    font-size: small;
 }
