@@ -1,3 +1,4 @@
+/* regole generali */
 *{
     padding: 0;
     margin: 0;
@@ -14,40 +15,52 @@ body{
     max-width: 1170px;
     margin: 0 auto;
 }
+/* fine regole generali */
+/* inizio contenuto main */
 
 h1{
-    color: rgb(243, 81, 108);
-    text-align: center;
+    color: rgb(241, 55, 117);
     margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+p{
+    margin-bottom:30px;
+}
+
+h1,p{
+    text-align: center;
+}
+/* card presentazione con immagine e testo */
+.col{
+    background-color: rgb(1, 1, 22);
+    width: calc(100% / 3 - 20px);
+    margin: 20px 10px;
+    float: left;
+    box-shadow: 0 0 10px 3px rgba(128, 128, 128, 0.548);  
 }
 
 .col::after{
     content: '';
     display: table;
     clear: both;
-
 }
-.col{
-    background-color: rgb(1, 1, 22);
-    width: calc(100% / 3 - 20px);
-    margin: 20px 10px;
-    float: left;
 
-}
 .card-text{
     color: white;
     padding-top: 10px;
-    line-height: 1.5;
-    display: block;
+    line-height: 1.7;
 }
 
 .content>img{
-    width: 25%;
+    width: 30%;
     float: left;
     margin-right: 20px;
 }
 
 .email{
-    color: rgb(84, 173, 224);
+    color: rgb(137, 198, 233);
     font-size: small;
-}
+    }
+/* fine card presentazione con immagine e testo */
